@@ -9,8 +9,6 @@ android {
         release {
             storeFile file('..\\..\\..\\android_key')
             keyAlias 'upload'
-            storePassword ANDROID_STORE_PASSWORD
-            keyPassword ANDROID_KEY_PASSWORD
         }
     }
     def versionMajor = 1

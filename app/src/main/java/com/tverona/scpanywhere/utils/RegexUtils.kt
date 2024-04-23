@@ -19,7 +19,7 @@ class RegexUtils {
         }
 
         fun scpNumToUrl(num: Int): String {
-            return "www.scpwiki.com/scp-$num"
+            return "scp-wiki.wikidot.com/scp-$num"
         }
     }
 }

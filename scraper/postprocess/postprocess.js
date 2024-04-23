@@ -51,7 +51,7 @@ async function processScripts(inputPath) {
 				}
 			]
 		}, {
-			script: 'www.scpwiki.com/common--javascript/resize-iframe.html',
+			script: 'scp-wiki.wikidot.com/common--javascript/resize-iframe.html',
 			replace: [
 				{
 					src: 'parent.parent.$j(\'iframe.html-block-iframe[src$="/\' + id + \'"]\').height(height + \'px\');',

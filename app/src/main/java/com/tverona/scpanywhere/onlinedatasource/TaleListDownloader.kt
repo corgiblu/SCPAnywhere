@@ -45,7 +45,7 @@ class TaleListDownloader @Inject constructor(
     }
 
     fun download(): List<UrlEntry> {
-        val url = "http://www.scpwiki.com/system:page-tags/tag/tale#pages"
+        val url = "http://scp-wiki.wikidot.com/system:page-tags/tag/tale#pages"
         return processTaleTitles(url)
     }
 }

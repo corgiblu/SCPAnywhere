@@ -1,7 +1,7 @@
 const config = {
-	baseUrl : 'http://www.scpwiki.com',
+	baseUrl : 'http://scp-wiki.wikidot.com',
 	baseUrlRegEx : '^http[s]*://www\\.scpwiki\\.com',
-	baseDir : 'www.scpwiki.com',
+	baseDir : 'scp-wiki.wikidot.com',
 	threadPoolSize : 64,
 }
 

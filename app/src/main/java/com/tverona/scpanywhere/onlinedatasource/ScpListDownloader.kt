@@ -78,7 +78,7 @@ class ScpListDownloader @Inject constructor(
      */
     fun getTalesNum(): Int {
         var talesNum = 0
-        val talesPattern = "http://www.scpwiki.com/scp-series-%d-tales-edition"
+        val talesPattern = "http://scp-wiki.wikidot.com/scp-series-%d-tales-edition"
 
         while (true) {
             val url = talesPattern.format(talesNum + 1)
@@ -102,8 +102,8 @@ class ScpListDownloader @Inject constructor(
     fun download(): List<UrlEntry> {
         val scpEntries = arrayListOf<UrlEntry>()
         var seriesNum = 1
-        val initSeries = "http://www.scpwiki.com/scp-series"
-        val seriesPattern = "http://www.scpwiki.com/scp-series-%d"
+        val initSeries = "http://scp-wiki.wikidot.com/scp-series"
+        val seriesPattern = "http://scp-wiki.wikidot.com/scp-series-%d"
         while (true) {
             val url = if (seriesNum == 1) initSeries else seriesPattern.format(seriesNum)
             val seriesList = processSeries(url, seriesNum) ?: break
